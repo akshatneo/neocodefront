@@ -274,7 +274,7 @@ export default function TelephonyComponent() {
                 />
               </div>
 
-              <Button type="submit" className="h-11 min-w-[110px]">
+              <Button className="h-11 min-w-[110px]">
                 Search
               </Button>
             </div>

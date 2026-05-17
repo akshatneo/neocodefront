@@ -26,18 +26,18 @@ const AppHeader: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if ((event.metaKey || event.ctrlKey) && event.key === "k") {
-        event.preventDefault();
-        inputRef.current?.focus();
-      }
-    };
+    // const handleKeyDown = (event: KeyboardEvent) => {
+    //   if ((event.metaKey || event.ctrlKey) && event.key === "k") {
+    //     event.preventDefault();
+    //     inputRef.current?.focus();
+    //   }
+    // };
 
-    document.addEventListener("keydown", handleKeyDown);
+    // document.addEventListener("keydown", handleKeyDown);
 
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-    };
+    // return () => {
+    //   document.removeEventListener("keydown", handleKeyDown);
+    // };
   }, []);
 
   return (
@@ -88,14 +88,14 @@ const AppHeader: React.FC = () => {
               width={154}
               height={32}
               className="dark:hidden"
-              src="./images/logo/logo.svg"
+              src="/images/logo/logo.png"
               alt="Logo"
             />
             <Image
               width={154}
               height={32}
               className="hidden dark:block"
-              src="./images/logo/logo-dark.svg"
+              src="/images/logo/logo-dark.png"
               alt="Logo"
             />
           </Link>
@@ -120,7 +120,7 @@ const AppHeader: React.FC = () => {
             </svg>
           </button>
 
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <form>
               <div className="relative">
                 <span className="pointer-events-none absolute top-1/2 left-4 -translate-y-1/2">
@@ -153,7 +153,7 @@ const AppHeader: React.FC = () => {
                 </button>
               </div>
             </form>
-          </div>
+          </div> */}
         </div>
         <div
           className={`${
@@ -165,7 +165,7 @@ const AppHeader: React.FC = () => {
             <ThemeToggleButton />
             {/* <!-- Dark Mode Toggler --> */}
 
-            <NotificationDropdown />
+            {/* <NotificationDropdown /> */}
             {/* <!-- Notification Menu Area --> */}
           </div>
           {/* <!-- User Area --> */}
