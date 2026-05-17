@@ -3,9 +3,9 @@
   "version": "2.2.3",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 4000",
-    "build": "next build",
-    "start": "next start -p 4000",
+    "dev": "NEXT_PUBLIC_APP_ENV=local next dev -p 4000",
+    "build": "NEXT_PUBLIC_APP_ENV=local next build",
+    "start": "NEXT_PUBLIC_APP_ENV=local next start -p 4000",
     "deploy": "next start -p 4000 >> /var/log/neocodefront/express.log 2>&1",
     "lint": "eslint ."
   },
