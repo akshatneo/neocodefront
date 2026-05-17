@@ -45,7 +45,7 @@ export default function SignInForm() {
 
       var data = await login_res.json();
 
-      console.log("Sign-in successful!",data);
+      console.log("Sign-in successful!", data);
       window.location.href = "/";
     } catch (error) {
       console.error("Error during sign-in:", error);
