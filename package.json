@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "NEXT_PUBLIC_APP_ENV=local next dev -p 4000",
     "build": "NEXT_PUBLIC_APP_ENV=local next build",
+    "build-prod": "next build",
     "start": "NEXT_PUBLIC_APP_ENV=local next start -p 4000",
     "deploy": "next start -p 4000 >> /var/log/neocodefront/express.log 2>&1",
     "lint": "eslint ."
